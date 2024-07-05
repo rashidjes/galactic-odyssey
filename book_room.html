@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Galactic Odyssey - Booking</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Book your room at the Amazing Galactic Odyssey Theme Park.">
+    <meta name="author" content="team22webdev">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="600">
+    <meta name="keywords" content="Theme Park Galactic Odyssey Space Stars Aliens Booking">
+    <style>
+        /* Add some space between the button and other elements */
+        button {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Galactic Odyssey - Booking</h1>
+    </header>
+
+    <button onclick="goBack()" style="margin-bottom: 20px;">Go Back</button>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+    <div>
+        <form action="/submit_booking" method="post">
+            <label for="checkin_date">Check-in Date:</label><br>
+            <input type="date" id="checkin_date" name="checkin_date"><br>
+            <label for="checkout_date">Check-out Date:</label><br>
+            <input type="date" id="checkout_date" name="checkout_date"><br>
+            <label for="num_guests">Number of Guests:</label><br>
+            <input type="number" id="num_guests" name="num_guests" min="1"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+    <footer>
+        <div>
+            <span id="contact_information">
+                <ul>
+                    <li id="our_blog"><a href="#">Our blog</a></li>
+                    <li id="contact_us"><a href="contact_us.html">Contact us</a></li>
+                    <li id="faqs"><a href="#">FAQs</a></li>
+                    <li id="claims"><a href="#">Claims</a></li>
+                </ul>
+            </span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
